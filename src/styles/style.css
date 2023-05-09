@@ -1,0 +1,777 @@
+html{
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #dbc201;
+  /* min-height: 100%; */
+  height: 100vh;
+}
+
+#root{
+  /* height: 100%; */
+  flex: 1;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App{
+  height: 100%;
+}
+
+main{
+  height: 100%;
+}
+
+footer{
+  text-align: center ;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #44b2bd;
+}
+
+.input-width2, .input-btn2 {
+  width: 40%;
+}
+
+.input-height {
+  height: 150px;
+}
+
+.width {
+  height: 200px;
+}
+
+
+
+/* Login dan Register Style */
+.login-card{
+  width: 70%;
+  height: 80%;
+  background-color: rgb(255, 255, 255,0);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.6));
+}
+
+.input-title {
+  margin: 10px 0;
+  font-size: 80px;
+  color: #15506D;
+  font-weight: 700;
+}
+
+.login-row {
+  width: 710px;
+  font-size: 16px;
+}
+
+.login-row button {
+  width: 45%;
+}
+
+.icon-btn {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.login-row input {
+  width: 35%;
+  background-color: rgb(255, 255, 255,0);
+  font-weight: 500;
+}
+
+.login-row input:focus {
+  background-color: rgb(255, 255, 255,0);
+}
+
+.google-btn {
+  background-color: #DD4C39;
+  font-weight: 500;
+}
+
+.facebook-btn {
+  background-color: #1877F2;
+  font-weight: 500;
+}
+
+.input-btn {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #15506D;
+  color: white;
+  width: 610px;
+  height: 48px;
+}
+
+.daftar-btn {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #15506D;
+  width: 200px;
+  height: 48px;
+}
+
+.login-text {
+  font-weight: 500;
+}
+
+.mention {
+  line-height: 0;
+}
+
+.mention p {
+  font-size: 11px;
+}
+
+.mention span {
+  font-weight: 700;
+}
+
+
+/* Navigation */
+header {
+  background-color: #226e88;
+}
+
+header > nav {
+  width: 90%;
+  color: white;
+}
+
+nav{
+  display: flex;
+}
+
+nav>ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav>ul>li {
+  margin: 10px;
+}
+
+.navigate-title {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  flex: 1;
+}
+
+#hamburger-icon{
+  display: none;
+}
+
+.navigate-title > a{
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.navigate-title > a > h1 {
+  font-size: 24px;
+}
+
+.navigate-title>button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navigate-link {
+  flex-direction: row;
+  font-size: 20px;
+  background-color: #226e88;
+  /* margin-right: 20px; */
+}
+
+.navigate-link>li {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  min-height: 44px;
+}
+
+.navigate-link>li>a {
+  display: inline-block;
+  line-height: 44px;
+  min-height: 44px;
+  color: white;
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.hidden {
+  display: none;
+  
+}
+
+/* Home Page Style */
+.home-page{
+  background-color: white;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+.home-page > h1{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.worker-list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.worker-item{
+  background: transparent;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+  border-radius: 15px;
+}
+
+.worker-item__body{
+  padding: 15px;
+
+}
+
+.worker-item__img > img{
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.waiting-list-order__card, .on-progress-order__card{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  padding: 15px;
+  margin: 15px;
+}
+
+.on-progress-order__card__body, .waiting-list-order__card__body{
+  margin-right: 50px;
+}
+
+.on-progress-order__card__footer, .waiting-list-order__card__footer{
+  border-left: 1px solid black;
+  padding: 15px;
+  flex: 1;
+}
+
+.waiting-list-order button{
+  margin: 7px;
+}
+
+
+/* Detail Worker Page Style */
+.detail-page{
+  padding: 20px;
+  background-color: white;
+  height: 100%;
+}
+
+.worker-detail, .userProfile-detail{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.worker-detail > .card-header, .userProfile-detail > .card-header{
+  margin-right: 20px;
+  padding: 15px;
+  padding-left: 25px;
+  border-right: 1px solid rgba(0, 0, 0, .4);
+  flex: 2;
+}
+
+.worker-detail > .card-header > img, .userProfile-detail > .card-header > img{
+  display: block;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px auto 10px auto;
+}
+
+.worker-detail > .card-header> .card-header__name{
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.worker-detail > .card-header> .card-header__skill{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.worker-detail > .card-header> .card-header__address{
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 550;
+}
+
+.worker-detail > .card-header> .card-header__phone{
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 550;
+}
+
+.worker-detail > .card-body{
+  padding: 15px;
+  flex: 5;
+}
+
+.card-body__rating{
+  font-size: 24px;
+}
+
+.card-body__button{
+  margin-top: 30px;
+}
+
+.card-body__button > a > button{
+  min-height: 44px;
+  min-width: 44px;
+  padding: 10px;
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+.card-body__button__chat{
+  color: white;
+  font-weight: 500;
+  background-color: #25d366;
+  border: 2px solid #25d366;
+  border-radius: 10px;
+}
+
+.card-body__button__order{
+  color: white;
+  font-weight: 500;
+  background-color: #0d6efd;
+  border: 2px solid #0d6efd;
+  border-radius: 10px;
+}
+
+.comment{
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.comment-header > img{
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/* user profile page  */
+.userProfile-page{
+  height: 100%;
+  background-color: white;
+  padding: 15px;
+}
+
+.userProfile-detail > .card-header{
+  padding: 15px;
+  flex: 1;
+}
+
+.userProfile-detail > .card-header > form{
+  margin: 30px;
+}
+
+.userProfile-detail > .card-header > form > input{
+  margin-bottom: 30px;
+}
+
+.userProfile-detail > .card-header{
+  padding-right: 0;
+  margin-right: 12px;
+}
+
+.userProfile-detail > .card-body > .biodata{
+  display: flex;
+  justify-content:space-between;
+}
+
+.userProfile-detail > .card-body > .biodata table{
+  margin-bottom: 30px;
+}
+
+.userProfile-detail > .card-body > .biodata td{
+  padding: 5px;
+  padding-right: 10px;
+}
+
+.userProfile-detail > .card-body > .biodata > form{
+  flex: 1;
+}
+
+.userProfile-detail > .card-body > .biodata > form > table{
+  width: 100%;
+}
+
+.userProfile-detail > .card-body > .biodata > form > button{
+  display: block;
+  font-size: 18px;
+  margin: auto;
+}
+
+/* order Page */
+.order-page{
+  background-color: white;
+  height: 100%;
+}
+
+.order-form{
+  padding: 20px;
+  padding-top: 50px;
+}
+
+.order-form > h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.order-form > form {
+  padding: 20px;
+}
+
+.order-form > form > button{
+  display: block;
+  margin: auto;
+  font-size: 18px;
+}
+
+.your-order-page{
+  background-color: white;
+  height: 100%
+}
+
+.order-penyewa{
+  padding: 20px;
+  padding-top: 50px;
+}
+
+.order-penyewa > h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.order-penyewa__card{
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  margin: 20px;
+  border: 1px solid black;
+}
+
+.order-penyewa__card__body{
+  margin-right: 50px;  
+}
+
+.order-penyewa__card__body__table > tbody > tr >td {
+  padding: 3px;
+  margin-left: 3px;
+}
+
+.order-penyewa__card__body__table > tbody > tr > td:nth-child(2) {
+  margin-right: 10px;
+}
+
+.order-penyewa__card__footer{
+  padding: 15px;
+  border-left: 1px solid gray;
+  flex: 1;
+}
+
+.order-penyewa__card__footer > h3{
+  margin-bottom: 25px;
+}
+
+.star-button{
+  display: none;
+}
+
+.star{
+  cursor: pointer;
+  transition: 0.2;
+}
+
+.review-input{
+  width: 100%;
+  border: 1px solid black;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 8px;
+  margin-top: 10px;
+  min-height: 175px;
+}
+
+@media screen and (max-width: 805px) {
+  header > nav {
+    width: 100%;
+    color: white;
+    flex-direction: column;
+  }
+  #hamburger-icon{
+    display: block;
+  }
+  .navigate-link{
+    flex-direction: column;
+    background-color: #318FA2;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .worker-list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.body-color {
+  background-color: white;
+}
+
+/* Login dan Register Style */
+.body-yellow {
+  background-color: #dbc201;
+}
+
+.login-card{
+  width: 70%;
+  height: 80%;
+  background-color: rgb(255, 255, 255,0);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.6));
+}
+
+.register-card{
+  width: 70%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+  
+  background-color: rgb(255, 255, 255,0);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.6));
+}
+
+.input-title {
+  margin: 10px 0;
+  font-size: 4rem;
+  color: #15506D;
+  font-weight: 700;
+}
+
+.login-row {
+  font-size: 16px;
+}
+
+.login-row input {
+  width: 50%;
+  background-color: rgb(255, 255, 255,0);
+  font-weight: 500;
+}
+
+.login-row label {
+  font-size: 24px;
+}
+
+.login-row input:focus {
+  background-color: rgb(255, 255, 255,0);
+}
+
+.input-btn {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #15506D;
+  color: white;
+  width: 50%;
+  height: 48px;
+}
+
+.daftar-btn {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #15506D;
+  width: 30%;
+  height: 48px;
+}
+
+.login-text {
+  font-weight: 500;
+}
+
+.mention {
+  width: 100%;
+}
+
+.mention p {
+  font-size: 11px;
+}
+
+.mention span {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  .input-title {
+    font-size: 2.5rem;
+  }
+
+  .login-row input {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .input-title {
+    font-size: 1.8rem;
+  }
+
+  .login-row label {
+    font-size: 18px;
+  }
+
+  .input-btn, .daftar-btn, .login-text {
+    font-size: 14px;
+    height: 40px;
+  }
+
+  .daftar-btn {
+    width: 40%;
+  }
+
+  .mention p {
+    font-size: 8px;
+  }
+
+}
+
+/* landing dan Bantuan Style */
+.bg-color {
+  background-color: #15506D;
+}
+
+.base h1 {
+  font-size: 3rem;
+}
+
+.base .fs {
+  font-size: 1.8rem;
+}
+
+.base p {
+  font-size: 1.5rem;
+}
+
+.base img {
+  width: 600px;
+  height: 700px;
+  object-fit:cover;
+}
+
+.contact {
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .base img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .base h1 {
+    font-size: 2rem;
+  }
+
+  .base .fs {
+    font-size: 1.6rem;
+  }
+
+  .base p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .base img {
+    width: 240px;
+    height: 340px;
+  }
+
+  .base h1 {
+    font-size: 1.6rem;
+  }
+
+  .base .fs {
+    font-size: 16px;
+  }
+
+  .base p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .base img {
+    width: 180px;
+    height: 240px;
+  }
+
+  .base h1 {
+    font-size: 16px;
+  }
+
+  .base .fs {
+    font-size: 13px;
+  }
+
+  .base p {
+    font-size: 0.6rem;
+  }
+
+  .contact {
+    line-height: 5px;
+  }
+  
+  
+}
+
+@media only screen and (max-width: 400px) {
+  .base img {
+    width: 120px;
+    height: 180px;
+  }
+
+  .base h1 {
+    font-size: 3vw;
+  }
+
+  .base .fs {
+    font-size: 2.5vw;
+  }
+
+  .base p {
+    font-size: 2vw;
+  }
+
+  .contact {
+    line-height: 2px;
+  }
+}
