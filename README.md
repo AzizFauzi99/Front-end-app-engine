@@ -13,6 +13,4 @@ Find Ideal Worker adalah aplikasi yang menghubungkan antara penyewa dengan tukan
 
 Database by [FreeSQLdatabase.com](https://www.freesqldatabase.com/)
 
-test
-
 
